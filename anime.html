@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ Dynamique</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="anime.js" defer></script>
+
+<style>
+    .reponse{
+        display: none; 
+        padding: 15px;
+        background-color: white;
+        line-height: 1.5; 
+           }
+
+ /*style des questionselles deviennent des zones cliquables */
+    .question {
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin: 0;
+    cursor: pointer; /*curseur devient une main au survol */
+    font-weight: bold;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s; /*effet fluide au survol*/
+}
+
+/*conteneur pour chaque bloc question/reponse */
+.faq-item {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden; /*pour que les coins arrondis fonctionnent avec le fond du titre*/
+}
+</style>
+</head>
+<body>
+    <h1>Foire Aux Questions</h1>
+
+    <div class="faq-item">
+        <div class="question">ca va ?</div>
+        <div class="reponse">oui.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question">tu as faim ?</div>
+        <div class="reponse">oui.</div>
+    </div>
+
+</body>
+</html>
